@@ -1,0 +1,84 @@
+.nav {
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo__container{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    }
+    
+    .navigation__menu {
+        display: flex;
+        width: 20rem;
+        justify-content: space-around;
+        display: none;
+    
+        .menu-item{
+            display: inline-block;
+            
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: $ubuntu;
+                font-weight: $bold;
+            }
+        }
+    }
+    .burguer-menu {
+        //display: block;
+        color: white;
+        margin-right: 1rem;
+    }
+    
+}
+
+
+
+@media screen and (min-width : 761px) {
+    .nav {
+        background-color: $black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .logo__container{
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+        }
+        
+        .navigation__menu {
+            display: flex;
+            width: 20rem;
+            justify-content: space-around;
+        
+            .menu-item{
+                display: inline-block;
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $ubuntu;
+                    font-weight: $bold;
+                }
+            }
+        }
+        .burguer-menu {
+            display: none;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+

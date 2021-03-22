@@ -1,0 +1,99 @@
+.main-right {
+    padding: 1.5rem 1rem;
+    font-family: $ubuntu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.75rem;
+    border: solid 1.5px;
+    
+    
+    .main-right__image {
+        height: 15%;
+        border-radius: 50%;
+        border: solid;
+    }
+    .main-right__title {
+        font-size: $large;
+    }
+    
+    .main-right__icons i {
+        font-size: $large;
+        margin-right: 0.7rem;
+    }
+    .main-right__paragraph {
+        font-size: $medium;
+        color: $sable;
+        line-height: 2rem;
+    }
+    .main-right__div {
+        background-color: #585454;
+        width: 100%;
+        //height: auto;
+        text-align: center;
+        color: white;
+        padding: 0.2rem;
+        p {
+            font-weight: $bold;
+            font-size: $large;
+            margin: 0;
+        }
+    }
+
+    .main-right__list {
+        align-self: flex-start;
+        padding-left: 1.2rem;
+        line-height: 1.5rem;
+        list-style-type:circle;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width : 761px) {
+    .main-right{
+        margin: 0 0.5rem 1rem 0
+        
+    }
+
+}
+
+//ANIMATION SVG
+
+@keyframes mover {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform:translateX(30%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes rotating {
+0% {
+
+  transform:  rotate(0deg) ;
+  
+}
+
+100% {
+ 
+  transform:  rotate(360deg) ;
+  
+}
+  }
+
+  #left-symbol, #slash, #right-symbol {
+    animation: mover 4s  infinite  ;
+  }
+
+  #engine, #central-circle {
+    animation: rotating 4s infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 81% 81% 0;
+  }

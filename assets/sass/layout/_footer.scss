@@ -1,0 +1,112 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    justify-content: space-around;
+    font-size: $medium;
+    font-family: $poppins;
+    color: white;
+    align-items: center;
+    
+    .footer__contact {
+        //width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: white;
+            margin-bottom:1rem ;
+        }
+
+        .footer__form {
+            display: flex;
+            //height: 2rem;
+            flex-direction: column;
+            align-items: center;
+            
+            input {
+                border-radius: 7px;
+                font-family: $poppins;
+                margin-right: 0.2rem;
+            }
+            input:focus {
+                outline: none;
+                background-color:$tangerine ;
+            }
+            button {
+                border-radius: 7px;
+                background-color: $tangerine;
+                font-family: $poppins;
+                box-shadow: white;
+                max-width: 3.5rem;
+                pad: 1px 6px;
+                border-style: outset;
+                margin-top: 0.2rem;
+            }
+            button:hover {
+                background-color: white;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 761px){
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    justify-content: space-around;
+    font-size: $medium;
+    font-family: $poppins;
+    color: white;
+    align-items: center;
+    
+    .footer__contact {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 0;
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0 2rem 0 0;
+        }
+
+        .footer__form {
+            display: flex;
+            flex-direction: row;
+            height: 2rem;
+            
+            input {
+                border-radius: 7px;
+                font-family: $poppins;
+                margin-right: 0.2rem;
+            }
+            input:focus {
+                outline: none;
+                background-color:$tangerine ;
+            }
+            button {
+                border-radius: 7px;
+                background-color: $tangerine;
+                font-family: $poppins;
+                box-shadow: white;
+            }
+            button:hover {
+                background-color: white;
+            }
+        }
+    }
+}
+}
